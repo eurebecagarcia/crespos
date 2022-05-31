@@ -1,0 +1,311 @@
+@media(max-width: 1200px){
+    nav ul li {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1100px){
+
+    .box-sociais{
+        display:none
+    }
+
+    .busca{
+        width: 130px;
+    }
+
+    .box-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-text h2{
+        width: 100%;
+        font-size: 45px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        
+    }
+    .box-text p{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .max-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .box-image-first{
+        align-self: center;
+        margin:0 0 15px 0;
+    }
+    .box-image{
+       margin: 0 0 90px 0;
+    }
+    .box-image-text{
+        width: 100%;
+    }
+    
+    .box-image-end{
+        margin-top:0;
+        margin-bottom: 15px;
+     }
+
+     .box-image-caminho{
+         margin:0;
+     }
+    
+
+     .gallery-box{
+         justify-content: center;
+     }
+
+     footer p{
+         font-size: 14px;
+         width: 100%;
+     }
+
+}
+
+@media(max-width:940px){
+    header{
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    .logo-mobile{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .menu-hamburger{
+        display: flex;
+        font-size: 35px;
+        background: #9767A9;
+        height: 100%;
+        align-items: center;
+        width: 80px;
+        justify-content: center;
+        color: #FFF;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        min-width: 104px;
+        min-height: 180px;
+        background: #9767A9;
+        position: absolute;
+        top: 6.7rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul li {
+        color: #FFF;
+        padding: 0.8rem 0.8rem 0.8rem 1.5rem;
+        border-bottom: 1px solid #AC95BB;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .banner {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }    
+
+    .box-banner-text{
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+    .box-banner-text h1 {
+        width: 70%;
+    }
+
+    .box-banner-text p {
+        width: 55%;
+        font-weight: 300;
+    }
+
+    .box-text{
+        padding: 30px;
+    }
+
+    .box-image-first{
+        width: 100%;
+    }
+
+    .box-image{
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .box-image-end{
+        width: 100%;
+    }
+
+    .box-image-first figure{
+        width: 80%;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .box-image figure{
+        width: 80%;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .box-image-end figure{
+        width: 80%;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .box-image-caminho{
+       width: 100%; 
+       display: flex;
+       justify-content: center;
+    }
+
+    .box-image-caminho figure {
+        width: 80%;
+    }
+
+    .box-image-text{
+        width: 100%;
+        margin-top: -5rem;
+    }
+
+    .box-contatos{
+        display: none;
+    }
+
+    .gallery-box{
+        display:none;
+    }
+    .gallery-mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-gallery{
+        display:flex;
+    }
+    .rei-mobile img{
+        width:200px;
+        height:300px;
+        margin: 0 5px 5px 0;
+
+    }
+    .astros{
+        display: flex;
+    }
+    .astros img{
+         width: 150px ;
+         height: 150px;
+         margin: 0 5px 5px 0;
+    }
+    .thais-araujo-mobile figure img{
+        width: 304px;
+        height: 140px;
+        object-fit: cover;
+    }
+    .gloria-maria-mobile img{
+        width: 500px;
+        height: 300px;
+        margin-bottom: 4px;
+    }
+    .modelo-mobile{
+        display: flex;
+    } 
+    .modelo-mobile img{
+        width: 150px;
+        height: 300px;
+        margin: 0 5px 5px 0;
+    }
+    .sorriso-mobile{
+       display: flex; 
+    }
+    .sorriso-mobile img{
+        width: 150px ;
+        height: 150px;
+        margin: 0 5px 5px 0;
+    }
+    .model-mobile img{
+        width: 190px;
+        height: 460px;
+    }
+    
+    footer{
+        background:#fff;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 7rem;
+        padding-bottom: 3rem;
+    }
+    footer p{
+        color: black;
+        font-size: 12px;
+        align-self: center;
+    }
+    strong{
+        display: block;
+        font-size: 16px;
+        color: black;
+    }
+    figcaption{
+        display: none;
+    }
+
+    .interaction{
+        align-self: end;
+        margin-right: 3rem;
+    }
+
+    .interaction figure{
+        width: 30px;
+    }
+    .interaction img{
+        background: #9767A9;
+        border-radius: 50%;
+        width: 20px;
+
+    }
+}
+
+@media(max-width: 425px){
+    .box-banner-text{
+        width: 100%;
+    }
+
+    .box-banner-text h1{
+        width: 100%;
+    }
+
+    .box-banner-text p {
+        width: 100%;
+    }
+
+    .box-text h2{
+        font-size: 25px;
+    }
+
+    .box-text p{
+        font-size: 16px;
+    }
+}

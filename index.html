@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,19 +16,27 @@
 </head>
 <body>
     <header>
-        <nav>
+        <div  class="menu-hamburger" onclick="openMenu()">
+            <p>&#9776</p>
+        </div>
+        <figure class="logo-mobile">
+            <img src="./assets/logo.png" alt="logo">
+        </figure>
+        <div class="menu">
             <figure class="logo">
                 <img src="./assets/logo.png" alt="logo">
             </figure>
-            <ul>
-                <li>Dicas</li>
-                <li>Cronograma Capilar</li>
-                <li>Referências</li>
-                <li>Produtos</li>
-                <li>Cadastre-se</li>
-                <li>Contatos</li>
-            </ul>
-        </nav>
+            <nav class="menu-box">
+                <ul>
+                    <li>Dicas</li>
+                    <li>Cronograma Capilar</li>
+                    <li>Referências</li>
+                    <li>Produtos</li>
+                    <li>Cadastre-se</li>
+                    <li>Contatos</li>
+                </ul>
+            </nav>
+        </div>
         <div class="box-contatos">
             <form class="busca">
                 <img class="image-busca"  src="./assets/icon-pesquisa.svg" alt="pesquisa">
@@ -55,68 +64,76 @@
         </section>
         <div class="container">
         <section class="max-content">
-            <div>
-                    <div class="box-image">
-                        <div class="box-image-text">
-                            <h2>1. Olhe para o espelho e toque no seu cabelo</h2>
-                            <p>Olhando para o espelho, toque no seu cabelo com carinho, veja como é macio, totalmente diferente do que a sociedade fez você acreditar por toda a sua vida. Afinal, não é porque a sua textura é diferente do liso, que ele é duro, feio… Toque nele sem julgamentos e você vai sentir. Vai perceber que essa textura inclusive é incrível para penteados. Você já viu quanto penteados incríveis dá para fazer com o seu cabelo crespo? E o volume, então!? De invejar… É lindo e cheio de poder. É como coroa que nasceu com você.</p>
-                        </div>
-                    </div>
-            </div>
-            <div>
-                <div class="box-image-end">
-                    <div class="box-image-text">
-                        <h2>2. Tenha referências</h2>
-                        <p>Que tal parar de tentar se encaixar em padrões menores que você? O que a sociedade diz que é bonito, não importa, você é maior do que isso. As pessoas são diferentes e essa é a beleza da vida. Já pensou que chato todo mundo igual? Procure se inspirar em pessoas semelhantes. Com o corpo parecido, tom de pele similar e um cabelo crespo, como o seu… Mas não igual ao seu, porque você é única. Se inspire nessas pessoas, pessoas que você admira, mas não se esqueça de que você é tão incrível quanto elas, do jeitinho que você é.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="max-content">
-            <div class="box-image-3">
+            <div class="box-image-first">
+                <figure>
+                    <img src="./assets/cabelo-no-espelho.png" alt="criança-no-espelho">
+                </figure>
                 <div class="box-image-text">
-                    <h2>1. Olhe para o espelho e toque no seu cabelo</h2>
-                    <p>Sabe aquele frizz que você tenta esconder? E aquele volume que você tenta abaixar? Quem disse que eles são feios? E quem são “eles” para dizer o que quer que seja? O seu volume, o seu frizz, são parte de você. Use-os ao seu favor, tente enxergar cada detalhe do seu cabelo com carinho.</p>
+                    <h3>1. Olhe para o espelho e toque no seu cabelo</h3>
+                    <p>Olhando para o espelho, toque no seu cabelo com carinho, veja como é macio, totalmente diferente do que a sociedade fez você acreditar por toda a sua vida. Afinal, não é porque a sua textura é diferente do liso, que ele é duro, feio… Toque nele sem julgamentos e você vai sentir. Vai perceber que essa textura inclusive é incrível para penteados. Você já viu quanto penteados incríveis dá para fazer com o seu cabelo crespo? E o volume, então!? De invejar… É lindo e cheio de poder. É como coroa que nasceu com você.</p>
                 </div>
             </div>
-            <div class="box-image-end-4">
+            <div class="box-image-end">
+                <figure>
+                    <img src="./assets/reporter.png" alt="Reporter">
+                </figure>
                 <div class="box-image-text">
-                    <h2>3. Seja amável com seus detalhes</h2>
-                    <p>Ouvir a opinião dos outros, principalmente as negativas, nunca levou ninguém a lugar nenhum. A sociedade é cruel e algumas pessoas também. Não se deixe levar por pessoas que só conseguem enxergar olhando de dentro de uma caixinha muito pequena para um mundo grande, lindo e cheio de diversidade. Levante a cabeça, balance o seu cabelo e saia da caixa porque o mundo é seu!</p>
+                    <h3>2. Tenha referências</h3>
+                    <p>Que tal parar de tentar se encaixar em padrões menores que você? O que a sociedade diz que é bonito, não importa, você é maior do que isso. As pessoas são diferentes e essa é a beleza da vida. Já pensou que chato todo mundo igual? Procure se inspirar em pessoas semelhantes. Com o corpo parecido, tom de pele similar e um cabelo crespo, como o seu… Mas não igual ao seu, porque você é única. Se inspire nessas pessoas, pessoas que você admira, mas não se esqueça de que você é tão incrível quanto elas, do jeitinho que você é.</p>
                 </div>
             </div>
-           
-        </section>
-        <section class="max-content">
-            <div class="box-image-5">
+            <div class="box-image">
+                <figure>
+                    <img src="./assets/cachos.png" alt="Cachos">
+                </figure>
                 <div class="box-image-text">
-                    <h2>5. Procure suas raízes</h2>
-                    <p>Passar pela transição é uma das formas de encontrar as suas raízes, aquelas literais. Mas também é a porta de entrada para que você procure a sua ancestralidade, sua origem. Toda a história que conta porque você tem esse cabelo crespo. A sua história e a de tantas outras pessoas formam uma história só. Esta é cheia de luta e resistência. Então resista a todos que quiserem te colocar para baixo nessa jornada e se apegue a como a sua história é linda e cheia de força.</p>
+                    <h3>1. Olhe para o espelho e toque no seu cabelo</h3>
+                    <p>Olhando para o espelho, toque no seu cabelo com carinho, veja como é macio, totalmente diferente do que a sociedade fez você acreditar por toda a sua vida. Afinal, não é porque a sua textura é diferente do liso, que ele é duro, feio… Toque nele sem julgamentos e você vai sentir. Vai perceber que essa textura inclusive é incrível para penteados. Você já viu quanto penteados incríveis dá para fazer com o seu cabelo crespo? E o volume, então!? De invejar… É lindo e cheio de poder. É como coroa que nasceu com você.</p>
                 </div>
             </div>
-            <div class="box-image-end-6">
+            <div class="box-image-end">
+                <figure>
+                    <img src="./assets/reinado.png" alt="Rainha">
+                </figure>
                 <div class="box-image-text">
-                    <h2>6. Respeite suas fases</h2>
-                    <p>Você não precisa ter aquele cabelo enorme e super volumoso. Um cabelo crespo curto também é lindo, assim como o médio, aquele com duas texturas, durante a transição… Todos esses cabelos são seus, todos importantes e lindos a sua maneira. Respeite as fases do seu cabelo natural crespo e lembre-se que tudo passa, por mais difícil que seja a situação.</p>
+                    <h3>2. Tenha referências</h3>
+                    <p>Que tal parar de tentar se encaixar em padrões menores que você? O que a sociedade diz que é bonito, não importa, você é maior do que isso. As pessoas são diferentes e essa é a beleza da vida. Já pensou que chato todo mundo igual? Procure se inspirar em pessoas semelhantes. Com o corpo parecido, tom de pele similar e um cabelo crespo, como o seu… Mas não igual ao seu, porque você é única. Se inspire nessas pessoas, pessoas que você admira, mas não se esqueça de que você é tão incrível quanto elas, do jeitinho que você é.</p>
                 </div>
             </div>
-        </section>
-        <section class="max-content">
-            <div class="box-image-7">
+            <div class="box-image">
+                <figure>
+                    <img src="./assets/mae.png" alt="Mãe">
+                </figure>
                 <div class="box-image-text">
-                    <h2>7. Tenha orgulho dele</h2>
-                    <p>Se você chegou até aqui, é porque enfrentou uma sociedade inteira, entrou em uma luta difícil consigo mesma(o), mas aprendeu a enxergar toda a beleza que você carrega aí, no topo da sua cabeça. Agora que você conquistou e ama esse seu cabelo crespo natural, carregue-o com orgulho! Ele merece e você também!</p>
+                    <h3>1. Olhe para o espelho e toque no seu cabelo</h3>
+                    <p>Olhando para o espelho, toque no seu cabelo com carinho, veja como é macio, totalmente diferente do que a sociedade fez você acreditar por toda a sua vida. Afinal, não é porque a sua textura é diferente do liso, que ele é duro, feio… Toque nele sem julgamentos e você vai sentir. Vai perceber que essa textura inclusive é incrível para penteados. Você já viu quanto penteados incríveis dá para fazer com o seu cabelo crespo? E o volume, então!? De invejar… É lindo e cheio de poder. É como coroa que nasceu com você.</p>
                 </div>
             </div>
-            <div class="box-image-end-8">
-                <div>
+            <div class="box-image-end">
+                <figure>
+                    <img src="./assets/espuma.png" alt="Lavando o cabelo">
+                </figure>
+                <div class="box-image-text">
+                    <h3>2. Tenha referências</h3>
+                    <p>Que tal parar de tentar se encaixar em padrões menores que você? O que a sociedade diz que é bonito, não importa, você é maior do que isso. As pessoas são diferentes e essa é a beleza da vida. Já pensou que chato todo mundo igual? Procure se inspirar em pessoas semelhantes. Com o corpo parecido, tom de pele similar e um cabelo crespo, como o seu… Mas não igual ao seu, porque você é única. Se inspire nessas pessoas, pessoas que você admira, mas não se esqueça de que você é tão incrível quanto elas, do jeitinho que você é.</p>
+                </div>
+            </div>
+            <div class="box-image">
+                <figure>
+                    <img src="./assets/natural.png" alt="Cabelo natural">
+                </figure>
+                <div class="box-image-text">
+                    <h3>1. Olhe para o espelho e toque no seu cabelo</h3>
+                    <p>Olhando para o espelho, toque no seu cabelo com carinho, veja como é macio, totalmente diferente do que a sociedade fez você acreditar por toda a sua vida. Afinal, não é porque a sua textura é diferente do liso, que ele é duro, feio… Toque nele sem julgamentos e você vai sentir. Vai perceber que essa textura inclusive é incrível para penteados. Você já viu quanto penteados incríveis dá para fazer com o seu cabelo crespo? E o volume, então!? De invejar… É lindo e cheio de poder. É como coroa que nasceu com você.</p>
+                </div>
+            </div>
+            <div class="box-image-caminho">
+                <figure>
                     <img src="./assets/Caminho.svg" alt="Caminho">
-                </div>
+                </figure>
             </div>
-        </section>
-        </div>
         <section class="gallery-box">
-           <div>
+           <div class="box-rei">
                <figure>
                    <img class="rei" src="./assets/rei.png" alt="rei">
                </figure>
@@ -124,7 +141,7 @@
                 <img class="gmaria" src="./assets/gloriamaria.png" alt="gloria-maria">
             </figure>
            </div> 
-           <div>
+           <div class="box-artist">
                <figure>
                    <img class="artist" src="./assets/beyonce.png" alt="Beyonce">
                </figure>
@@ -135,7 +152,7 @@
                    <img class="artist" src="./assets/thais-araujo.png" alt="atriz">
                </figure>
            </div>
-           <div>
+           <div class="box-model">
                <figure>
                    <img class="model" src="./assets/model.png" alt="model">
                </figure>
@@ -143,7 +160,7 @@
                    <img class="snoopy" src="./assets/cabelo-snoopydog.png" alt="Snoopydog">
                </figure>
            </div>
-           <div>
+           <div class="box-modelo">
                <figure>
                    <img class="modelo" src="./assets/black.png" alt="modelo">
                </figure>
@@ -157,9 +174,65 @@
                </figure>
            </div>
         </section>
+           <section class="gallery-mobile">
+               <section class="container-gallery">
+                   <div class="rei-mobile">
+                       <figure>
+                           <img src="./assets/rei.png" alt="rei">
+                       </figure>
+                   </div>
+                   <div>
+                       <div class="astros">
+                           <figure>
+                               <img src="./assets/beyonce.png" alt="Beyonce">
+                           </figure>
+                           <figure>
+                               <img src="./assets/black-panter.png" alt="ator">
+                           </figure>
+                       </div>
+                       <div class="thais-araujo-mobile">
+                       <figure>
+                           <img src="./assets/thais-araujo.png" alt="atriz">
+                       </figure>
+                       </div>
+               </section>
+            <section> 
+                <div class="gloria-maria-mobile">
+                    <figure>
+                        <img src="./assets/gloriamaria.png" alt="Glória-Maria">
+                    </figure>
+                </div>
+            </section>  
+            <section class="container-gallery">
+                <div>
+                    <div class="modelo-mobile">
+                        <figure>
+                            <img src="./assets/black.png" alt="modelo">
+                        </figure>
+                        <figure>
+                            <img src="./assets/barba.png" alt="Barba">
+                        </figure>
+                    </div>
+                    <div class="sorriso-mobile">
+                        <figure>
+                            <img src="./assets/sorrriso.png" alt="Sorriso">
+                        </figure>
+                        <figure>
+                            <img src="./assets/cabelo-snoopydog.png" alt="Snoopydog">
+                        </figure>
+                    </div>
+                    </div>
+                    <div class="model-mobile">
+                        <figure>
+                            <img src="./assets/model.png" alt="Model">
+                        </figure>
+                    </div>
+       </section>
+            </section>  
     </main>
     <footer>
-        <div>
+        <div class="copyright-box">
+            <strong>Copyright</strong>
             <p>Layout produzido por Vai na Web para fins exclusivamente educacionais.</p>
             <p>Referência: https://br.pinterest.com/pin/464644886562532897/ e https://todecacho.com.br/cabelo-crespo-natural/</p>
         </div>
@@ -181,4 +254,5 @@
         </div>
     </footer>
 </body>
+<script src="main.js"></script>
 </html>
